@@ -1,4 +1,6 @@
 # MissionValueGraph
+Ich habe hier ein Skript für euch welches den Wert der angefahrenen und der verfügbaren Missionen in Credits anzeigt, als Zahl und graphisch mit dem geschätzten / wahren Datum der Fertigstellung. Die meiste Arbeit ist dabei in den graphischen Teil geflossen, bei dem der Zeitpunkt der Erstellung bei der Alarmierung gespeichert wird. Anwendungen sind z.B. kurzfristige Planung für verfügabre Investitionssummen oder eine Übersicht darüber, wann Missionen geteilt werden. Denkt daran einen geeigneten Wert für die Missionsdaduer anzugeben.
+
 ## Allgemein:
 - Es werden fast keine extra Serveranfragen gemacht, nur einmal pro Session um alle verfügbaren Einsätze ("Missions-Katalog") mit Ihrem Wert zu laden.
 - Für euch interessant ist vor allem missionDuration: Die geschätzte Missionsdauer, die Ihr direkt zu Beginn des Skripts anpassen solltet. In unserem Verein gibt es -zum Beispiel die Regel, dass nach 20 Stunden alles beendet werden darf und es ist nahezu rund um die Uhr jemand aktiv. Voreingestellt sind 20 Stunden, mit 0 Stunden könnt Ihr sehen, wann die Missionen erstellt wurden.
