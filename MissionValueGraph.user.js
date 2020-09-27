@@ -5,6 +5,7 @@
 // @include      *://www.leitstellenspiel.de/
 // @include      *://www.leitstellenspiel.de/missions/*
 // @grant        none
+// @updateURL    https://github.com/Cyclefly/MissionValueGraph/raw/main/MissionValueGraph.user.js
 // ==/UserScript==
 
 //Hier die erwartete Einsatzdauer einsetzen.
