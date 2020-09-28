@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 //Hier die erwartete Einsatzdauer einsetzen.
-let missionDuration = 20;
+let missionDuration = 20; //Stunden
 
 //On the mainpaige
 if ("/" == window.location.pathname){
