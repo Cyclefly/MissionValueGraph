@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         MissionValueGraph
-// @version      0.8.3
+// @version      0.8.4
 // @author       Cyclefly
 // @include      *://www.leitstellenspiel.de/
 // @include      *://www.leitstellenspiel.de/missions/*
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 //Hier die erwartete Einsatzdauer einsetzen.
-let missionDuration = 20; //Stunden
+let missionDuration = 0;
 
 //On the mainpaige
 if ("/" == window.location.pathname){
@@ -36,7 +36,7 @@ if ("/" == window.location.pathname){
 		function calcMissionValue(){
 			userMissionIDs = new Array();
 			//Create NodeList with every mission not yet finished/deleted
-			let missions = document.querySelectorAll('div.missionSideBarEntry:not(.mission_deleted):not(.mission_alliance_distance_hide)'); //#mission_list > div.
+			let missions = document.querySelectorAll('div.missionSideBarEntry:not(.mission_deleted):not(.mission_alliance_distance_hide):not(#mission_sidebar_downtime_alert)'); //#mission_list > div.
 			let totalCredits = 0; let userCredits = 0;
 			for(let i=0;i<missions.length;i++){
 				let mType = missions[i].getAttribute("mission_type_id")
